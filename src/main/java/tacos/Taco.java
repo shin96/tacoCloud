@@ -10,8 +10,9 @@ import java.util.List;
 public class Taco {
 
     @NotNull
-    @Size(min=5, message="Name must be at least 5 characters long")
+    @Size(min = 5, message = "at least 5 character name should be there")
     private String name;
-    @Size(min=1, message="You must choose at least 1 ingredient")
+
+    @Size(min = 1, message = "minimum one ingredient is required")
     private List<String> ingredients;
 }
